@@ -1,0 +1,209 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ruzbeh Navabi – Informatikstudent (TUHH)</title>
+  <meta name="description" content="Ruzbeh Navabi, Informatikstudent an der TU Hamburg (TUHH). Python, Data und KI-Automatisierung. Auf der Suche nach einer Werkstudentenstelle in Hamburg.">
+  <meta name="author" content="Ruzbeh Navabi">
+  <meta name="color-scheme" content="light dark">
+  <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#0b1220" media="(prefers-color-scheme: dark)">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Ruzbeh Navabi – Informatikstudent (TUHH)">
+  <meta property="og:description" content="Informatikstudent an der TU Hamburg | Python · Data · KI-Automatisierung. Auf der Suche nach einer Werkstudentenstelle in Hamburg.">
+  <meta property="og:locale" content="de_DE">
+  <meta property="og:locale:alternate" content="en_US">
+  <meta property="og:url" content="https://ruzbeh21.github.io/">
+  <link rel="canonical" href="https://ruzbeh21.github.io/">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main" data-i18n="skip">Zum Inhalt springen</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#top" aria-label="Ruzbeh Navabi – Startseite">RN</a>
+      <nav aria-label="Hauptnavigation" data-i18n-aria="navLabel">
+        <ul class="nav-list">
+          <li><a href="#about" data-i18n="navAbout">Über mich</a></li>
+          <li><a href="#project" data-i18n="navProject">Projekt</a></li>
+          <li><a href="#experience" data-i18n="navExperience">Erfahrung</a></li>
+          <li><a href="#contact" data-i18n="navContact">Kontakt</a></li>
+        </ul>
+      </nav>
+      <div class="lang-switch" role="group" aria-label="Sprache" data-i18n-aria="langLabel">
+        <button type="button" data-lang="de" aria-pressed="true" lang="de">DE</button>
+        <button type="button" data-lang="en" aria-pressed="false" lang="en">EN</button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero container" id="top">
+      <p class="eyebrow">Hamburg, Germany</p>
+      <h1>Ruzbeh Navabi</h1>
+      <p class="tagline" data-i18n="tagline">Informatikstudent an der TU Hamburg <span class="sep">|</span> <span class="focus">Python · Data · KI-Automatisierung</span></p>
+      <p class="lead" data-i18n="lead">Auf der Suche nach einer Werkstudentenstelle in Hamburg – ab sofort, bis zu 16&nbsp;Std./Woche.</p>
+      <div class="actions">
+        <a class="btn btn-primary" href="#contact" data-i18n="btnContact">Kontakt</a>
+        <a class="btn btn-secondary" href="cv.pdf" data-i18n="btnCv">Lebenslauf (PDF)</a>
+      </div>
+    </section>
+
+    <section class="section container" id="about" aria-labelledby="about-title">
+      <h2 id="about-title" data-i18n="aboutTitle">Über mich</h2>
+      <div class="about-grid">
+        <p class="about-text" data-i18n="aboutText">Ich studiere seit Oktober 2024 Informatik (B.Sc.) an der Technischen Universität Hamburg (TUHH) und bin im 3.&nbsp;Fachsemester. Mich interessieren vor allem Daten, Automatisierung und künstliche Intelligenz. Als studentischer Tutor erkläre ich technische Inhalte so, dass sie verständlich werden.</p>
+        <dl class="facts">
+          <dt data-i18n="langsTitle">Sprachen</dt>
+          <dd data-i18n="langsText">Deutsch (C1) · Englisch (fließend) · Persisch (Muttersprache)</dd>
+          <dt data-i18n="locationTitle">Standort</dt>
+          <dd>Hamburg, Germany</dd>
+        </dl>
+      </div>
+    </section>
+
+    <section class="section container" id="project" aria-labelledby="project-title">
+      <h2 data-i18n="projectSection">Ausgewähltes Projekt</h2>
+      <article class="project-card">
+        <h3 id="project-title" data-i18n="projectTitle">KI-Agenten-Workflow zur Bewerbungsautomatisierung (mit Claude)</h3>
+        <ul class="project-points">
+          <li data-i18n="projectP1">Ein täglich laufender KI-Agenten-Workflow, gebaut mit Claude: durchsucht Jobportale, gleicht Treffer per Gmail auf Duplikate ab, erstellt mit Python (reportlab) passgenaue PDF-Bewerbungen, entwirft E-Mails und füllt Formulare vor.</li>
+          <li data-i18n="projectP2">Prozess, Regeln und Qualitätsprüfungen habe ich selbst definiert – inklusive manueller Freigabe vor jedem Versand und SHA-256-Prüfung der hochgeladenen Dateien.</li>
+        </ul>
+
+        <figure class="pipeline">
+          <figcaption data-i18n="pipelineCaption">Ablauf der Pipeline</figcaption>
+          <ol class="pipeline-steps">
+            <li data-i18n="step1">Jobsuche</li>
+            <li data-i18n="step2">Prüfung, ob Anzeige noch aktiv</li>
+            <li data-i18n="step3">Duplikat-Abgleich per Gmail</li>
+            <li data-i18n="step4">PDF-Erstellung</li>
+            <li data-i18n="step5">E-Mail- / Formular-Vorbereitung</li>
+            <li class="step-final" data-i18n="step6">Freigabe &amp; Prüfungen</li>
+          </ol>
+        </figure>
+
+        <ul class="tags" aria-label="Technologien" data-i18n-aria="techLabel">
+          <li>Python</li>
+          <li>reportlab</li>
+          <li>Claude</li>
+          <li>Gmail</li>
+          <li data-i18n="tagAutomation">Automatisierung</li>
+        </ul>
+        <!-- GitHub link placeholder: add <a class="project-link" href="https://github.com/USERNAME/REPO">Code auf GitHub</a> once the code is published -->
+      </article>
+    </section>
+
+    <section class="section container" id="experience" aria-labelledby="experience-title">
+      <h2 id="experience-title" data-i18n="experienceTitle">Erfahrung</h2>
+      <ol class="timeline">
+        <li class="timeline-item">
+          <p class="period">11/2026 – 02/2027</p>
+          <h3 data-i18n="job1Title">Studentischer Tutor</h3>
+          <p class="org">TU Hamburg (TUHH)</p>
+          <p data-i18n="job1Text">Leitung wöchentlicher Übungen auf Englisch für die Lehrveranstaltung „DAS“: Einstiegsquiz, Übungsaufgaben, Moderation von Studierendenpräsentationen und Erklärung der Lösungen. Abgeschlossene Tutorenschulung der TUHH inklusive Lehrsimulation.</p>
+        </li>
+        <li class="timeline-item">
+          <p class="period">04/2025 – 09/2026</p>
+          <h3 data-i18n="job2Title">Front Office Manager Assistant &amp; Rezeptionist</h3>
+          <p class="org">a&amp;o Hostels Reeperbahn, Hamburg</p>
+          <p data-i18n="job2Text">Täglicher Kontakt mit internationalen Gästen, Schichtarbeit, Kassensysteme und Zahlungsabgleich. Nach 7&nbsp;Monaten zum Front Office Manager Assistant befördert.</p>
+        </li>
+        <li class="timeline-item">
+          <p class="period">04/2025 – 05/2025</p>
+          <h3 data-i18n="job3Title">Servicekraft (Service &amp; Logistik)</h3>
+          <p class="org">Talent Garden, Hamburg</p>
+        </li>
+      </ol>
+    </section>
+
+    <section class="section container" id="education" aria-labelledby="education-title">
+      <h2 id="education-title" data-i18n="educationTitle">Studium</h2>
+      <div class="edu">
+        <p class="period" data-i18n="eduPeriod">seit 10/2024</p>
+        <h3 data-i18n="eduDegree">B.Sc. Informatik</h3>
+        <p class="org" data-i18n="eduOrg">Technische Universität Hamburg (TUHH)</p>
+        <p class="subhead" data-i18n="coursesTitle">Aktuelle Lehrveranstaltungen</p>
+        <ul class="tags tags-plain">
+          <li data-i18n="c1">Algorithmen und Datenstrukturen</li>
+          <li data-i18n="c2">Funktionale Programmierung (Haskell)</li>
+          <li data-i18n="c3">Numerische Mathematik</li>
+          <li>Computer Engineering</li>
+          <li>Computer Networks and Internet Security</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section container" id="skills" aria-labelledby="skills-title">
+      <h2 id="skills-title" data-i18n="skillsTitle">Kenntnisse</h2>
+      <div class="skills-grid">
+        <div>
+          <h3 data-i18n="skillsProg">Programmierung</h3>
+          <ul class="tags">
+            <li>Python</li><li>SQL</li><li>Haskell</li><li>R</li><li>HTML/CSS/JavaScript</li><li>TypeScript</li><li>PHP</li>
+          </ul>
+        </div>
+        <div>
+          <h3 data-i18n="skillsData">Daten &amp; Tools</h3>
+          <ul class="tags">
+            <li>Git</li><li>Power BI</li><li>Excel (VBA)</li><li>MS Office</li>
+          </ul>
+        </div>
+        <div>
+          <h3 data-i18n="skillsAi">KI-Tools</h3>
+          <ul class="tags">
+            <li>ChatGPT</li><li>Gemini</li><li>Claude</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="section container contact" id="contact" aria-labelledby="contact-title">
+      <h2 id="contact-title" data-i18n="contactTitle">Kontakt</h2>
+      <p class="lead" data-i18n="availability">Verfügbar ab sofort, bis zu 16&nbsp;Stunden pro Woche – für IT-Tätigkeiten flexibel an allen Wochentagen.</p>
+      <ul class="contact-list">
+        <li>
+          <span class="contact-label" data-i18n="emailLabel">E-Mail</span>
+          <a class="js-mail" data-user="ruzbeh6" data-domain="gmail.com" href="#contact">ruzbeh6&nbsp;[at]&nbsp;gmail&nbsp;[dot]&nbsp;com</a>
+        </li>
+        <li>
+          <span class="contact-label">LinkedIn</span>
+          <a href="https://www.linkedin.com/in/ruzbeh-navabi-4930a82a4/" rel="me noopener">linkedin.com/in/ruzbeh-navabi-4930a82a4</a>
+        </li>
+        <li>
+          <span class="contact-label" data-i18n="locationTitle">Standort</span>
+          <span>Hamburg, Germany</span>
+        </li>
+      </ul>
+    </section>
+
+    <section class="section container legal" id="privacy" aria-labelledby="privacy-title">
+      <h2 id="privacy-title" data-i18n="privacyTitle">Datenschutz</h2>
+      <div data-i18n="privacyText">
+        <h3>Verantwortlicher</h3>
+        <p>Ruzbeh Navabi, Hamburg. Kontakt per E-Mail (siehe oben).</p>
+        <h3>Hosting</h3>
+        <p>Diese Website wird über GitHub Pages (GitHub Inc., USA) bereitgestellt. Beim Aufruf verarbeitet GitHub technisch notwendige Zugriffsdaten wie die IP-Adresse, um die Seite auszuliefern und abzusichern. Rechtsgrundlage ist Art.&nbsp;6 Abs.&nbsp;1 lit.&nbsp;f DSGVO (berechtigtes Interesse an einer sicheren, funktionsfähigen Website). Details: <a href="https://docs.github.com/de/site-policy/privacy-policies/github-general-privacy-statement" rel="noopener">Datenschutzerklärung von GitHub</a>.</p>
+        <h3>Keine Cookies, kein Tracking</h3>
+        <p>Diese Website setzt keine Cookies und verwendet keine Analyse- oder Tracking-Dienste. Die gewählte Sprache (DE/EN) wird nur lokal in Ihrem Browser gespeichert und nicht übertragen.</p>
+        <h3>Kontakt per E-Mail</h3>
+        <p>Wenn Sie mir eine E-Mail schreiben, verwende ich Ihre Angaben nur, um Ihre Anfrage zu beantworten.</p>
+        <h3>Ihre Rechte</h3>
+        <p>Sie haben das Recht auf Auskunft, Berichtigung, Löschung, Einschränkung der Verarbeitung und Widerspruch sowie das Recht, sich bei einer Datenschutz-Aufsichtsbehörde zu beschweren, z.&nbsp;B. beim Hamburgischen Beauftragten für Datenschutz und Informationsfreiheit.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© 2026 Ruzbeh Navabi</p>
+      <a href="#privacy" data-i18n="privacyTitle">Datenschutz</a>
+    </div>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
