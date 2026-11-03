@@ -7,9 +7,12 @@ Personal portfolio site (German/English): a plain static site with no framework,
 | File | Purpose |
 |------|---------|
 | `index.html` | All content; the German text lives directly in the HTML |
-| `style.css` | Layout and light/dark theme (`prefers-color-scheme`) |
-| `script.js` | DE/EN toggle (English strings, saved in `localStorage`) and email obfuscation |
+| `style.css` | Layout, colour palette (#17252A · #2B7A78 · #3AAFA9 · #DEF2F1 · #FEFFFF) and light/dark theme |
+| `script.js` | DE/EN toggle (English strings, saved in `localStorage`), email obfuscation and scroll animations |
 | `favicon.svg` | "RN" monogram |
+| `photo-480/800.webp`, `photo-480/800.jpg` | Portrait (metadata stripped), served responsively |
+| `img/heatmap-bilinear.webp`, `img/dashboard-overview.webp` | Project card images, copied from the [heatmap-generator-c](https://github.com/ruzbeh21/heatmap-generator-c) and [hamburg-werkstudent-dashboard](https://github.com/ruzbeh21/hamburg-werkstudent-dashboard) repos |
+| `og-image.jpg` | 1200×630 preview image for LinkedIn and other link previews |
 | `cv.pdf` / `cv_en.pdf` | German / English CV. The CV button links to the one matching the selected language. Replace the files to update them. |
 
 ## Edit content

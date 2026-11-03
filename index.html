@@ -7,17 +7,24 @@
   <meta name="description" content="Ruzbeh Navabi, Informatikstudent an der TU Hamburg (TUHH). Python, Data und KI-Automatisierung. Auf der Suche nach einer Werkstudentenstelle in Hamburg.">
   <meta name="author" content="Ruzbeh Navabi">
   <meta name="color-scheme" content="light dark">
-  <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
-  <meta name="theme-color" content="#0b1220" media="(prefers-color-scheme: dark)">
-  <meta property="og:type" content="website">
+  <meta name="theme-color" content="#3AAFA9" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#17252A" media="(prefers-color-scheme: dark)">
+  <meta property="og:type" content="profile">
   <meta property="og:title" content="Ruzbeh Navabi – Informatikstudent (TUHH)">
   <meta property="og:description" content="Informatikstudent an der TU Hamburg | Python · Data · KI-Automatisierung. Auf der Suche nach einer Werkstudentenstelle in Hamburg.">
   <meta property="og:locale" content="de_DE">
   <meta property="og:locale:alternate" content="en_US">
   <meta property="og:url" content="https://ruzbeh21.github.io/">
+  <meta property="og:image" content="https://ruzbeh21.github.io/og-image.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Ruzbeh Navabi vor dem Hamburger Rathaus">
+  <meta name="twitter:card" content="summary_large_image">
   <link rel="canonical" href="https://ruzbeh21.github.io/">
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preload" as="image" href="photo-800.webp" imagesrcset="photo-480.webp 480w, photo-800.webp 800w" imagesizes="(min-width: 900px) 420px, 80vw" type="image/webp">
   <link rel="stylesheet" href="style.css">
+  <script>document.documentElement.classList.add("js");</script>
 </head>
 <body>
   <a class="skip-link" href="#main" data-i18n="skip">Zum Inhalt springen</a>
@@ -28,8 +35,9 @@
       <nav aria-label="Hauptnavigation" data-i18n-aria="navLabel">
         <ul class="nav-list">
           <li><a href="#about" data-i18n="navAbout">Über mich</a></li>
-          <li><a href="#project" data-i18n="navProject">Projekt</a></li>
+          <li><a href="#projects" data-i18n="navProject">Projekte</a></li>
           <li><a href="#experience" data-i18n="navExperience">Erfahrung</a></li>
+          <li><a href="#skills" data-i18n="navSkills">Kenntnisse</a></li>
           <li><a href="#contact" data-i18n="navContact">Kontakt</a></li>
         </ul>
       </nav>
@@ -41,158 +49,252 @@
   </header>
 
   <main id="main">
-    <section class="hero container" id="top">
-      <p class="eyebrow">Hamburg, Germany</p>
-      <h1>Ruzbeh Navabi</h1>
-      <p class="tagline" data-i18n="tagline">Informatikstudent an der TU Hamburg <span class="sep">|</span> <span class="focus">Python · Data · KI-Automatisierung</span></p>
-      <p class="lead" data-i18n="lead">Auf der Suche nach einer Werkstudentenstelle in Hamburg – ab sofort, bis zu 16&nbsp;Std./Woche.</p>
-      <div class="actions">
-        <a class="btn btn-primary" href="#contact" data-i18n="btnContact">Kontakt</a>
-        <a class="btn btn-secondary" href="cv.pdf" data-href-en="cv_en.pdf" data-i18n="btnCv">Lebenslauf (PDF)</a>
-      </div>
-    </section>
-
-    <section class="section container" id="about" aria-labelledby="about-title">
-      <h2 id="about-title" data-i18n="aboutTitle">Über mich</h2>
-      <div class="about-grid">
-        <p class="about-text" data-i18n="aboutText">Ich studiere seit Oktober 2024 Informatik (B.Sc.) an der Technischen Universität Hamburg (TUHH) und bin im 3.&nbsp;Fachsemester. Mich interessieren vor allem Daten, Automatisierung und künstliche Intelligenz. Als studentischer Tutor erkläre ich technische Inhalte so, dass sie verständlich werden.</p>
-        <dl class="facts">
-          <dt data-i18n="langsTitle">Sprachen</dt>
-          <dd data-i18n="langsText">Deutsch (C1) · Englisch (fließend) · Persisch (Muttersprache)</dd>
-          <dt data-i18n="locationTitle">Standort</dt>
-          <dd>Hamburg, Germany</dd>
-        </dl>
-      </div>
-    </section>
-
-    <section class="section container" id="project" aria-labelledby="project-title">
-      <h2 data-i18n="projectSection">Ausgewähltes Projekt</h2>
-      <article class="project-card">
-        <h3 id="project-title" data-i18n="projectTitle">KI-Agenten-Workflow zur Bewerbungsautomatisierung (mit Claude)</h3>
-        <ul class="project-points">
-          <li data-i18n="projectP1">Ein täglich laufender KI-Agenten-Workflow, gebaut mit Claude: durchsucht Jobportale, gleicht Treffer per Gmail auf Duplikate ab, erstellt mit Python (reportlab) passgenaue PDF-Bewerbungen, entwirft E-Mails und füllt Formulare vor.</li>
-          <li data-i18n="projectP2">Prozess, Regeln und Qualitätsprüfungen habe ich selbst definiert – inklusive manueller Freigabe vor jedem Versand und SHA-256-Prüfung der hochgeladenen Dateien.</li>
-        </ul>
-
-        <figure class="pipeline">
-          <figcaption data-i18n="pipelineCaption">Ablauf der Pipeline</figcaption>
-          <ol class="pipeline-steps">
-            <li data-i18n="step1">Jobsuche</li>
-            <li data-i18n="step2">Prüfung, ob Anzeige noch aktiv</li>
-            <li data-i18n="step3">Duplikat-Abgleich per Gmail</li>
-            <li data-i18n="step4">PDF-Erstellung</li>
-            <li data-i18n="step5">E-Mail- / Formular-Vorbereitung</li>
-            <li class="step-final" data-i18n="step6">Freigabe &amp; Prüfungen</li>
-          </ol>
+    <section class="hero" id="top">
+      <div class="container hero-grid">
+        <div class="hero-text">
+          <p class="eyebrow">Hamburg, Germany</p>
+          <h1><span class="h1-first">Ruzbeh</span> <span class="h1-last">Navabi</span></h1>
+          <p class="tagline" data-i18n="tagline">Informatikstudent an der TU Hamburg <span class="sep">|</span> <span class="focus">Python · Data · KI-Automatisierung</span></p>
+          <p class="lead" data-i18n="lead">Auf der Suche nach einer Werkstudentenstelle in Hamburg – ab sofort, bis zu 16&nbsp;Std./Woche.</p>
+          <div class="actions">
+            <a class="btn btn-primary" href="#contact" data-i18n="btnContact">Kontakt</a>
+            <a class="btn btn-secondary" href="cv.pdf" data-href-en="cv_en.pdf" data-i18n="btnCv">Lebenslauf (PDF)</a>
+          </div>
+        </div>
+        <figure class="hero-photo">
+          <picture>
+            <source type="image/webp" srcset="photo-480.webp 480w, photo-800.webp 800w" sizes="(min-width: 900px) 420px, 80vw">
+            <img src="photo-800.jpg" srcset="photo-480.jpg 480w, photo-800.jpg 800w" sizes="(min-width: 900px) 420px, 80vw"
+                 width="800" height="800" fetchpriority="high"
+                 alt="Porträt von Ruzbeh Navabi vor dem Hamburger Rathaus" data-i18n-alt="photoAlt">
+          </picture>
         </figure>
-
-        <ul class="tags" aria-label="Technologien" data-i18n-aria="techLabel">
-          <li>Python</li>
-          <li>reportlab</li>
-          <li>Claude</li>
-          <li>Gmail</li>
-          <li data-i18n="tagAutomation">Automatisierung</li>
-        </ul>
-        <!-- GitHub link placeholder: add <a class="project-link" href="https://github.com/USERNAME/REPO">Code auf GitHub</a> once the code is published -->
-      </article>
+      </div>
     </section>
 
-    <section class="section container" id="experience" aria-labelledby="experience-title">
-      <h2 id="experience-title" data-i18n="experienceTitle">Erfahrung</h2>
-      <ol class="timeline">
-        <li class="timeline-item">
-          <p class="period">11/2026 – 02/2027</p>
-          <h3 data-i18n="job1Title">Studentischer Tutor</h3>
-          <p class="org">TU Hamburg (TUHH)</p>
-          <p data-i18n="job1Text">Leitung wöchentlicher Übungen auf Englisch für die Lehrveranstaltung „DAS“: Einstiegsquiz, Übungsaufgaben, Moderation von Studierendenpräsentationen und Erklärung der Lösungen. Abgeschlossene Tutorenschulung der TUHH inklusive Lehrsimulation.</p>
-        </li>
-        <li class="timeline-item">
-          <p class="period">04/2025 – 09/2026</p>
-          <h3 data-i18n="job2Title">Front Office Manager Assistant &amp; Rezeptionist</h3>
-          <p class="org">a&amp;o Hostels Reeperbahn, Hamburg</p>
-          <p data-i18n="job2Text">Täglicher Kontakt mit internationalen Gästen, Schichtarbeit, Kassensysteme und Zahlungsabgleich. Nach 7&nbsp;Monaten zum Front Office Manager Assistant befördert.</p>
-        </li>
-        <li class="timeline-item">
-          <p class="period">04/2025 – 05/2025</p>
-          <h3 data-i18n="job3Title">Servicekraft (Service &amp; Logistik)</h3>
-          <p class="org">Talent Garden, Hamburg</p>
-        </li>
-      </ol>
-    </section>
-
-    <section class="section container" id="education" aria-labelledby="education-title">
-      <h2 id="education-title" data-i18n="educationTitle">Studium</h2>
-      <div class="edu">
-        <p class="period" data-i18n="eduPeriod">seit 10/2024</p>
-        <h3 data-i18n="eduDegree">B.Sc. Informatik</h3>
-        <p class="org" data-i18n="eduOrg">Technische Universität Hamburg (TUHH)</p>
-        <p class="subhead" data-i18n="coursesTitle">Aktuelle Lehrveranstaltungen</p>
-        <ul class="tags tags-plain">
-          <li data-i18n="c1">Algorithmen und Datenstrukturen</li>
-          <li data-i18n="c2">Funktionale Programmierung (Haskell)</li>
-          <li data-i18n="c3">Numerische Mathematik</li>
-          <li>Computer Engineering</li>
-          <li>Computer Networks and Internet Security</li>
+    <section class="section" id="about" aria-labelledby="about-title">
+      <div class="container">
+        <p class="kicker reveal" data-i18n="aboutKicker">Über mich</p>
+        <h2 id="about-title" class="section-title reveal" data-i18n="aboutTitle">Daten. Automatisierung. KI.</h2>
+        <p class="intro reveal" data-i18n="aboutText">Ich studiere seit Oktober 2024 Informatik (B.Sc.) an der Technischen Universität Hamburg (TUHH) und bin im 3.&nbsp;Fachsemester. Mich interessieren vor allem Daten, Automatisierung und künstliche Intelligenz. Als studentischer Tutor erkläre ich technische Inhalte so, dass sie verständlich werden.</p>
+        <ul class="bento">
+          <li class="tile tile-accent reveal">
+            <span class="tile-big">TUHH</span>
+            <span class="tile-small" data-i18n="tile1">B.Sc. Informatik seit 10/2024</span>
+          </li>
+          <li class="tile reveal">
+            <span class="tile-big" data-i18n="tile2Big">3.</span>
+            <span class="tile-small" data-i18n="tile2">Fachsemester</span>
+          </li>
+          <li class="tile reveal">
+            <span class="tile-big" data-i18n="tile3Big">16&nbsp;Std.</span>
+            <span class="tile-small" data-i18n="tile3">pro Woche – ab sofort verfügbar</span>
+          </li>
+          <li class="tile tile-dark reveal">
+            <span class="tile-big">DE · EN · FA</span>
+            <span class="tile-small" data-i18n="langsText">Deutsch (C1) · Englisch (fließend) · Persisch (Muttersprache)</span>
+          </li>
         </ul>
       </div>
     </section>
 
-    <section class="section container" id="skills" aria-labelledby="skills-title">
-      <h2 id="skills-title" data-i18n="skillsTitle">Kenntnisse</h2>
-      <div class="skills-grid">
-        <div>
-          <h3 data-i18n="skillsProg">Programmierung</h3>
-          <ul class="tags">
-            <li>Python</li><li>SQL</li><li>Haskell</li><li>R</li><li>HTML/CSS/JavaScript</li><li>TypeScript</li><li>PHP</li>
-          </ul>
-        </div>
-        <div>
-          <h3 data-i18n="skillsData">Daten &amp; Tools</h3>
-          <ul class="tags">
-            <li>Git</li><li>Power BI</li><li>Excel (VBA)</li><li>MS Office</li>
-          </ul>
-        </div>
-        <div>
-          <h3 data-i18n="skillsAi">KI-Tools</h3>
-          <ul class="tags">
-            <li>ChatGPT</li><li>Gemini</li><li>Claude</li>
-          </ul>
+    <section class="section project" id="projects" aria-labelledby="projects-title">
+      <div class="container">
+        <h2 id="projects-title" class="section-title reveal" data-i18n="projectsTitle">Projekte</h2>
+        <div class="project-grid">
+
+          <article class="project-card project-featured reveal" aria-labelledby="p1-title">
+            <p class="project-label" data-i18n="projectSection">Ausgewähltes Projekt</p>
+            <h3 id="p1-title" data-i18n="projectTitle">KI-Agenten-Workflow zur Bewerbungsautomatisierung (mit Claude)</h3>
+            <div class="project-body">
+              <p data-i18n="projectP1">Ein täglich laufender KI-Agenten-Workflow, gebaut mit Claude: durchsucht Jobportale, gleicht Treffer per Gmail auf Duplikate ab, erstellt mit Python (reportlab) passgenaue PDF-Bewerbungen, entwirft E-Mails und füllt Formulare vor.</p>
+              <p data-i18n="projectP2">Prozess, Regeln und Qualitätsprüfungen habe ich selbst definiert – inklusive manueller Freigabe vor jedem Versand und SHA-256-Prüfung der hochgeladenen Dateien.</p>
+            </div>
+            <figure class="pipeline">
+              <figcaption data-i18n="pipelineCaption">Ablauf der Pipeline</figcaption>
+              <ol class="pipeline-steps">
+                <li data-i18n="step1">Jobsuche</li>
+                <li data-i18n="step2">Prüfung, ob Anzeige noch aktiv</li>
+                <li data-i18n="step3">Duplikat-Abgleich per Gmail</li>
+                <li data-i18n="step4">PDF-Erstellung</li>
+                <li data-i18n="step5">E-Mail- / Formular-Vorbereitung</li>
+                <li class="step-final" data-i18n="step6">Freigabe &amp; Prüfungen</li>
+              </ol>
+            </figure>
+            <ul class="tags tags-project" aria-label="Technologien" data-i18n-aria="techLabel">
+              <li>Python</li>
+              <li>reportlab</li>
+              <li>Claude</li>
+              <li>Gmail</li>
+              <li data-i18n="tagAutomation">Automatisierung</li>
+            </ul>
+          </article>
+
+          <article class="project-card reveal" aria-labelledby="p2-title">
+            <figure class="project-shot">
+              <img src="img/heatmap-bilinear.webp" width="1200" height="400" loading="lazy" decoding="async"
+                   alt="Heatmap eines synthetischen Flussbett-Tiefenprofils mit Farbstufen von Dunkelblau über Grün bis Rot" data-i18n-alt="heatmapAlt">
+              <figcaption data-i18n="heatmapCaption">Echte Programmausgabe (bilineare Interpolation) mit synthetischen Beispieldaten</figcaption>
+            </figure>
+            <h3 id="p2-title" data-i18n="heatmapTitle">Heatmap-Generator in C</h3>
+            <p class="project-context" data-i18n="heatmapContext">Neuimplementierung 2026 · ursprünglich Teamprojekt (3&nbsp;Personen), TU Hamburg, Modul Prozedurale Programmierung, WiSe 2024/25</p>
+            <ul class="project-points">
+              <li data-i18n="heatmapP1">Kommandozeilenprogramm, das 3D-Messdaten (x, y, z) aus CSV-Dateien – z.&nbsp;B. Höhenprofile des Elbgrundes – als Heatmap im BMP-Format ausgibt</li>
+              <li data-i18n="heatmapP2">Frei wählbare Bildauflösung mit Interpolation von Zwischenpunkten (linear und Nearest Neighbor); Farbskala in 10 Stufen von Dunkelblau über Grün bis Rot</li>
+              <li data-i18n="heatmapP3">Umsetzung mit strukturierten Datentypen, Zeigern, dynamischer Speicherverwaltung und Datei-Ein-/Ausgabe; Präsentation vor Tutor und anderen Gruppen</li>
+              <li data-i18n="heatmapP4">Eigenständige Neuimplementierung mit Tests, Makefile und Speicherprüfung (Valgrind/ASan)</li>
+            </ul>
+            <pre class="code"><code>./heatmap example.csv 1000 1000</code></pre>
+            <div class="legend">
+              <p class="legend-label" data-i18n="legendLabel">Farbskala</p>
+              <ol class="legend-bar" aria-label="10 Farbstufen von Dunkelblau (niedrig) über Grün bis Rot (hoch)" data-i18n-aria="legendAria">
+                <li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li>
+              </ol>
+              <div class="legend-ends" aria-hidden="true"><span data-i18n="legendLow">niedrig</span><span data-i18n="legendHigh">hoch</span></div>
+            </div>
+            <ul class="tags tags-project" aria-label="Technologien" data-i18n-aria="techLabel">
+              <li>C</li><li>CSV</li><li>BMP</li><li>Interpolation</li><li>Teamwork</li>
+            </ul>
+            <div class="project-actions">
+              <a class="btn btn-primary" href="https://github.com/ruzbeh21/heatmap-generator-c" rel="noopener">Code</a>
+            </div>
+          </article>
+
+          <article class="project-card reveal" aria-labelledby="p3-title">
+            <figure class="project-shot">
+              <img src="img/dashboard-overview.webp" width="960" height="742" loading="lazy" decoding="async"
+                   alt="Screenshot des Dashboards: Kennzahlen und Balkendiagramm der 15 meistgefragten Skills" data-i18n-alt="dashboardAlt">
+              <figcaption data-i18n="dashboardCaption">Screenshot des Live-Dashboards (Stand: 3. November 2026)</figcaption>
+            </figure>
+            <h3 id="p3-title" data-i18n="dashboardTitle">Hamburg Werkstudenten-Jobmarkt-Dashboard</h3>
+            <p class="project-context" data-i18n="dashboardContext">Eigenes Datenprojekt · 2026</p>
+            <ul class="project-points">
+              <li data-i18n="dashboardP1">Python-Pipeline sammelt täglich Werkstudenten-Stellen über die Jobsuche-API der Bundesagentur für Arbeit, bereinigt und dedupliziert sie und entfernt Kontaktdaten.</li>
+              <li data-i18n="dashboardP2">Speicherung in SQLite; Kennzahlen über 10 eigene SQL-Abfragen mit CTEs; Skill-Erkennung per transparentem YAML-Wörterbuch mit 35 Skills.</li>
+              <li data-i18n="dashboardP3">Zweisprachiges, interaktives Plotly-Dashboard auf GitHub Pages, automatisiert mit GitHub Actions; 86 pytest-Tests und automatischer Datenschutz-Check.</li>
+            </ul>
+            <ul class="tags tags-project" aria-label="Technologien" data-i18n-aria="techLabel">
+              <li>Python</li><li>SQL</li><li>SQLite</li><li data-i18n="tagCleaning">Datenbereinigung</li><li data-i18n="tagViz">Datenvisualisierung</li><li>GitHub Actions</li><li>REST API</li>
+            </ul>
+            <div class="project-actions">
+              <a class="btn btn-primary" href="https://ruzbeh21.github.io/hamburg-werkstudent-dashboard/" data-i18n="dashboardBtn">Dashboard ansehen</a>
+              <a class="btn btn-secondary" href="https://github.com/ruzbeh21/hamburg-werkstudent-dashboard" rel="noopener">Code</a>
+            </div>
+          </article>
+
         </div>
       </div>
     </section>
 
-    <section class="section container contact" id="contact" aria-labelledby="contact-title">
-      <h2 id="contact-title" data-i18n="contactTitle">Kontakt</h2>
-      <p class="lead" data-i18n="availability">Verfügbar ab sofort, bis zu 16&nbsp;Stunden pro Woche – für IT-Tätigkeiten flexibel an allen Wochentagen.</p>
-      <ul class="contact-list">
-        <li>
-          <span class="contact-label" data-i18n="emailLabel">E-Mail</span>
-          <a class="js-mail" data-user="ruzbeh6" data-domain="gmail.com" href="#contact">ruzbeh6&nbsp;[at]&nbsp;gmail&nbsp;[dot]&nbsp;com</a>
-        </li>
-        <li>
-          <span class="contact-label">LinkedIn</span>
-          <a href="https://www.linkedin.com/in/ruzbeh-navabi-4930a82a4/" rel="me noopener">linkedin.com/in/ruzbeh-navabi-4930a82a4</a>
-        </li>
-        <li>
-          <span class="contact-label" data-i18n="locationTitle">Standort</span>
-          <span>Hamburg, Germany</span>
-        </li>
-      </ul>
+    <section class="section" id="experience" aria-labelledby="experience-title">
+      <div class="container">
+        <p class="kicker reveal" data-i18n="experienceKicker">Erfahrung</p>
+        <h2 id="experience-title" class="section-title reveal" data-i18n="experienceTitle">Erklären, organisieren, Verantwortung übernehmen.</h2>
+        <ol class="cards">
+          <li class="card reveal">
+            <p class="period">11/2026 – 02/2027 <span class="badge" data-i18n="badgeNow">Aktuell</span></p>
+            <h3 data-i18n="job1Title">Studentischer Tutor</h3>
+            <p class="org">TU Hamburg (TUHH)</p>
+            <p class="desc" data-i18n="job1Text">Leitung wöchentlicher Übungen auf Englisch für die Lehrveranstaltung „DAS“: Einstiegsquiz, Übungsaufgaben, Moderation von Studierendenpräsentationen und Erklärung der Lösungen. Abgeschlossene Tutorenschulung der TUHH inklusive Lehrsimulation.</p>
+          </li>
+          <li class="card reveal">
+            <p class="period">04/2025 – 09/2026</p>
+            <h3 data-i18n="job2Title">Front Office Manager Assistant &amp; Rezeptionist</h3>
+            <p class="org">a&amp;o Hostels Reeperbahn, Hamburg</p>
+            <p class="desc" data-i18n="job2Text">Täglicher Kontakt mit internationalen Gästen, Schichtarbeit, Kassensysteme und Zahlungsabgleich. Nach 7&nbsp;Monaten zum Front Office Manager Assistant befördert.</p>
+          </li>
+          <li class="card reveal">
+            <p class="period">04/2025 – 05/2025</p>
+            <h3 data-i18n="job3Title">Servicekraft (Service &amp; Logistik)</h3>
+            <p class="org">Talent Garden, Hamburg</p>
+          </li>
+        </ol>
+      </div>
     </section>
 
-    <section class="section container legal" id="privacy" aria-labelledby="privacy-title">
-      <h2 id="privacy-title" data-i18n="privacyTitle">Datenschutz</h2>
-      <div data-i18n="privacyText">
-        <h3>Verantwortlicher</h3>
-        <p>Ruzbeh Navabi, Hamburg. Kontakt per E-Mail (siehe oben).</p>
-        <h3>Hosting</h3>
-        <p>Diese Website wird über GitHub Pages (GitHub Inc., USA) bereitgestellt. Beim Aufruf verarbeitet GitHub technisch notwendige Zugriffsdaten wie die IP-Adresse, um die Seite auszuliefern und abzusichern. Rechtsgrundlage ist Art.&nbsp;6 Abs.&nbsp;1 lit.&nbsp;f DSGVO (berechtigtes Interesse an einer sicheren, funktionsfähigen Website). Details: <a href="https://docs.github.com/de/site-policy/privacy-policies/github-general-privacy-statement" rel="noopener">Datenschutzerklärung von GitHub</a>.</p>
-        <h3>Keine Cookies, kein Tracking</h3>
-        <p>Diese Website setzt keine Cookies und verwendet keine Analyse- oder Tracking-Dienste. Die gewählte Sprache (DE/EN) wird nur lokal in Ihrem Browser gespeichert und nicht übertragen.</p>
-        <h3>Kontakt per E-Mail</h3>
-        <p>Wenn Sie mir eine E-Mail schreiben, verwende ich Ihre Angaben nur, um Ihre Anfrage zu beantworten.</p>
-        <h3>Ihre Rechte</h3>
-        <p>Sie haben das Recht auf Auskunft, Berichtigung, Löschung, Einschränkung der Verarbeitung und Widerspruch sowie das Recht, sich bei einer Datenschutz-Aufsichtsbehörde zu beschweren, z.&nbsp;B. beim Hamburgischen Beauftragten für Datenschutz und Informationsfreiheit.</p>
+    <section class="section section-tint" id="skills" aria-labelledby="skills-title">
+      <div class="container">
+        <p class="kicker reveal" data-i18n="skillsKicker">Studium &amp; Kenntnisse</p>
+        <h2 id="skills-title" class="section-title reveal" data-i18n="skillsTitle">Werkzeuge, mit denen ich arbeite.</h2>
+        <div class="skills-grid">
+          <div class="card card-wide reveal">
+            <p class="period" data-i18n="eduPeriod">seit 10/2024</p>
+            <h3 data-i18n="eduDegree">B.Sc. Informatik</h3>
+            <p class="org" data-i18n="eduOrg">Technische Universität Hamburg (TUHH)</p>
+            <p class="subhead" data-i18n="coursesTitle">Aktuelle Lehrveranstaltungen</p>
+            <ul class="tags tags-plain">
+              <li data-i18n="c1">Algorithmen und Datenstrukturen</li>
+              <li data-i18n="c2">Funktionale Programmierung (Haskell)</li>
+              <li data-i18n="c3">Numerische Mathematik</li>
+              <li>Computer Engineering</li>
+              <li>Computer Networks and Internet Security</li>
+            </ul>
+          </div>
+          <div class="card card-wide card-ai reveal">
+            <h3 data-i18n="skillsAi">KI &amp; Agenten</h3>
+            <p class="ai-text" data-i18n="aiText">Ich nutze KI-Agenten nicht nur, ich baue sie auch: eigene Agenten-Workflows mit Claude, Skills, mit denen ich der KI neue Aufgaben beibringe, und Automatisierungen mit klaren Regeln und menschlicher Freigabe.</p>
+            <ul class="ai-points">
+              <li>
+                <strong data-i18n="ai1Title">KI-Agenten nutzen &amp; bauen</strong>
+                <span data-i18n="ai1Text">Mehrstufige Agenten-Workflows entwerfen, die selbstständig recherchieren, Dokumente erstellen und Ergebnisse prüfen.</span>
+              </li>
+              <li>
+                <strong data-i18n="ai2Title">Skills für KI erstellen</strong>
+                <span data-i18n="ai2Text">Wiederverwendbare Skills schreiben, die einem KI-Agenten Abläufe, Regeln und Qualitätsstandards beibringen.</span>
+              </li>
+              <li>
+                <strong data-i18n="ai3Title">Mit KI automatisieren</strong>
+                <span data-i18n="ai3Text">Wiederkehrende Arbeit an KI übergeben – mit Prüfschritten wie manueller Freigabe und Dateiprüfung per SHA-256.</span>
+              </li>
+            </ul>
+            <ul class="tags tags-ai">
+              <li>Claude</li><li>Claude Code</li><li>Agent Skills</li><li>ChatGPT</li><li>Gemini</li>
+            </ul>
+            <p class="ai-note" data-i18n="aiNote">Auch diese Website ist in Zusammenarbeit mit einem KI-Agenten (Claude Code) entstanden – von der Umsetzung bis zur Veröffentlichung.</p>
+          </div>
+          <div class="card reveal">
+            <h3 data-i18n="skillsProg">Programmierung</h3>
+            <ul class="tags">
+              <li>Python</li><li>C</li><li>SQL</li><li>Haskell</li><li>R</li><li>TypeScript</li><li>JavaScript</li><li>HTML/CSS</li><li>PHP</li>
+            </ul>
+          </div>
+          <div class="card reveal">
+            <h3 data-i18n="skillsData">Daten &amp; Tools</h3>
+            <ul class="tags">
+              <li>Git</li><li>Power BI</li><li>Excel (VBA)</li><li>MS Office</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section contact" id="contact" aria-labelledby="contact-title">
+      <div class="container contact-inner">
+        <h2 id="contact-title" class="section-title reveal" data-i18n="contactTitle">Kontakt</h2>
+        <p class="intro reveal" data-i18n="availability">Verfügbar ab sofort, bis zu 16&nbsp;Stunden pro Woche – für IT-Tätigkeiten flexibel an allen Wochentagen.</p>
+        <div class="actions actions-center reveal">
+          <a class="btn btn-primary js-mail" data-user="ruzbeh6" data-domain="gmail.com" href="#contact">ruzbeh6&nbsp;[at]&nbsp;gmail&nbsp;[dot]&nbsp;com</a>
+          <a class="btn btn-secondary" href="https://www.linkedin.com/in/ruzbeh-navabi-4930a82a4/" rel="me noopener">LinkedIn</a>
+        </div>
+        <p class="location reveal">Hamburg, Germany</p>
+      </div>
+    </section>
+
+    <section class="section legal" id="privacy" aria-labelledby="privacy-title">
+      <div class="container">
+        <h2 id="privacy-title" data-i18n="privacyTitle">Datenschutz</h2>
+        <div data-i18n="privacyText">
+          <h3>Verantwortlicher</h3>
+          <p>Ruzbeh Navabi, Hamburg. Kontakt per E-Mail (siehe oben).</p>
+          <h3>Hosting</h3>
+          <p>Diese Website wird über GitHub Pages (GitHub Inc., USA) bereitgestellt. Beim Aufruf verarbeitet GitHub technisch notwendige Zugriffsdaten wie die IP-Adresse, um die Seite auszuliefern und abzusichern. Rechtsgrundlage ist Art.&nbsp;6 Abs.&nbsp;1 lit.&nbsp;f DSGVO (berechtigtes Interesse an einer sicheren, funktionsfähigen Website). Details: <a href="https://docs.github.com/de/site-policy/privacy-policies/github-general-privacy-statement" rel="noopener">Datenschutzerklärung von GitHub</a>.</p>
+          <h3>Keine Cookies, kein Tracking</h3>
+          <p>Diese Website setzt keine Cookies und verwendet keine Analyse- oder Tracking-Dienste. Die gewählte Sprache (DE/EN) wird nur lokal in Ihrem Browser gespeichert und nicht übertragen.</p>
+          <h3>Kontakt per E-Mail</h3>
+          <p>Wenn Sie mir eine E-Mail schreiben, verwende ich Ihre Angaben nur, um Ihre Anfrage zu beantworten.</p>
+          <h3>Ihre Rechte</h3>
+          <p>Sie haben das Recht auf Auskunft, Berichtigung, Löschung, Einschränkung der Verarbeitung und Widerspruch sowie das Recht, sich bei einer Datenschutz-Aufsichtsbehörde zu beschweren, z.&nbsp;B. beim Hamburgischen Beauftragten für Datenschutz und Informationsfreiheit.</p>
+        </div>
       </div>
     </section>
   </main>
