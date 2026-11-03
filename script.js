@@ -84,6 +84,8 @@
   textNodes.forEach(function (el) { DE[el.dataset.i18n] = el.innerHTML; });
   ariaNodes.forEach(function (el) { DE_ARIA[el.dataset.i18nAria] = el.getAttribute("aria-label"); });
   var DE_META = { title: document.title, description: metaDesc ? metaDesc.content : "" };
+  var hrefNodes = document.querySelectorAll("[data-href-en]");
+  hrefNodes.forEach(function (el) { el.dataset.hrefDe = el.getAttribute("href"); });
 
   function apply(lang) {
     var strings = lang === "en" ? EN : DE;
@@ -97,6 +99,9 @@
     ariaNodes.forEach(function (el) {
       var value = aria[el.dataset.i18nAria];
       if (value !== undefined) el.setAttribute("aria-label", value);
+    });
+    hrefNodes.forEach(function (el) {
+      el.setAttribute("href", lang === "en" ? el.dataset.hrefEn : el.dataset.hrefDe);
     });
     document.documentElement.lang = lang;
     document.title = meta.title;

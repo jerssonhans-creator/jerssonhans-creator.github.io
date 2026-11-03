@@ -10,7 +10,7 @@ Personal portfolio site (German/English): a plain static site with no framework,
 | `style.css` | Layout and light/dark theme (`prefers-color-scheme`) |
 | `script.js` | DE/EN toggle (English strings, saved in `localStorage`) and email obfuscation |
 | `favicon.svg` | "RN" monogram |
-| `cv.pdf` | **Not included yet — add your CV as `cv.pdf` in the repo root.** The "Lebenslauf (PDF)" button links to it. |
+| `cv.pdf` / `cv_en.pdf` | German / English CV. The CV button links to the one matching the selected language. Replace the files to update them. |
 
 ## Edit content
 
